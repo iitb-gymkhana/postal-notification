@@ -1,6 +1,8 @@
 <?php
 
 $sso_secret = '';
+$smtp_user = '';
+$smtp_pass = '';
 
 class Hostel {
     public function __construct($code, $name, $hallmgr) {

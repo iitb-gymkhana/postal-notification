@@ -9,6 +9,11 @@ if (session_id() == '' || !isset($_SESSION) || !isset($_SESSION['user']) || $_SE
 
 $user = $_SESSION['user'];
 
+$queries = array();
+parse_str($_SERVER['QUERY_STRING'], $queries);
+if ($queries['success'] == "1") {
+        $success = true;
+}
 ?>
 
 <!DOCTYPE html>
@@ -132,6 +137,15 @@ $user = $_SESSION['user'];
                selectEmail(ui.item.username);
             },
         }); 
+
+<?php if ($success) {
+      echo " 
+        var href = window.location.href;
+        var url  = href.split('?suc');
+        history.pushState(null, null, url[0]);
+        M.toast({html: 'Mail has been sent successfully!'})
+      ";
+} ?>
       });
 
       function selectEmail(ldapid) {
@@ -148,6 +162,7 @@ $user = $_SESSION['user'];
       function send() {
           document.getElementById('sform').submit();
       }
+
     </script>
 
   </body>
