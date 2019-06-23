@@ -55,4 +55,6 @@
                 echo "Message has been sent";
                 header("location:index.php?success=1");
         }
+
+        $con->close();
 ?>
