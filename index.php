@@ -70,10 +70,13 @@ $user = $_SESSION['user'];
             <label for="autocomplete-input">Search</label>
           </div>
 
-          <div class="input-field col s12">
-            <input placeholder="Extra Information" id="comments" type="text">
-            <label for="comments">Comments</label>
-          </div>
+          <form action="mail.php" method="post" id="sform">
+            <div class="input-field col s12">
+              <input placeholder="Extra Information" id="comments" type="text" name="comments">
+              <label for="comments">Comments</label>
+            </div>
+            <input style="display: none" id="form-email" type="text" name="email">
+          </form>
 
           <div class="col s12">
             <span class="sel-mail">--</span>
@@ -134,6 +137,7 @@ $user = $_SESSION['user'];
       function selectEmail(ldapid) {
           semail = ldapid + '@iitb.ac.in';
           $('.sel-mail').html(semail);
+          $('#form-email').val(semail);
           $('.x-send').removeClass('disabled');
       }
 
@@ -142,7 +146,7 @@ $user = $_SESSION['user'];
       }
 
       function send() {
-          alert("Not yet implemented");
+          document.getElementById('sform').submit();
       }
     </script>
 
