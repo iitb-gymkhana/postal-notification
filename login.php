@@ -39,23 +39,11 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/jquery-ui.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/jquery-ui.theme.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"  media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <title> Postal Notification System </title>
-
-    <style>
-        body { overflow-y: scroll; }
-        .main {
-          margin: 0 auto;
-          max-width: 700px;
-          padding: 20px;
-        }
-        .float-right {
-          float: right;
-        }
-    </style>
-
   </head>
 
   <body>
