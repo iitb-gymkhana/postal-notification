@@ -82,6 +82,7 @@ if ($queries['success'] == "1") {
 
           <div class="col s12" style="margin-top: 10px;">
             <div class="float-right">
+              <a class="waves-effect waves-light btn blue" href="history.php" target="_blank">History</a>
               <a class="waves-effect waves-light btn" href="logout.php">Logout <?php echo $user; ?> </a>
             </div>
           </div>
