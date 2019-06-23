@@ -76,7 +76,7 @@ if ($queries['success'] == "1") {
 
           <div class="col s12">
             <div class="float-right">
-              <a class="waves-effect waves-light btn x-send disabled" onclick="send()">Send <i class="material-icons right">send</i></a>
+              <a class="waves-effect waves-light btn x-send disabled red" onclick="send()">Send <i class="material-icons right">send</i></a>
             </div>
           </div>
 
