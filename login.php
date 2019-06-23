@@ -49,6 +49,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
         .main {
           margin: 0 auto;
           max-width: 700px;
+          padding: 20px;
         }
         .float-right {
           float: right;

@@ -35,6 +35,7 @@ if ($queries['success'] == "1") {
         .main {
           margin: 0 auto;
           max-width: 700px;
+          padding: 20px;
         }
         .sel-mail {
           font-size: 1.3em;
@@ -58,7 +59,8 @@ if ($queries['success'] == "1") {
             <select id="hostel" onchange="selectHostel()">
 <?php
 	foreach ($hostels as &$h) {
-              if ($h->code && $h->hallmgr == $user) {
+              if (!$h->code) continue;
+              if ($h->hallmgr == $user) {
                       echo "<option selected value=\"$h->code\">$h->name</option>";
               } else {
                       echo "<option value=\"$h->code\">$h->name</option>";
