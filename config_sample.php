@@ -29,6 +29,7 @@ $hostels = array(
 	new Hostel("14", "Hostel 14 - Siliconship", "h14hallmgr"),
 	new Hostel("15", "Hostel 15 - Trident", "h15hallmgr"),
 	new Hostel("16", "Hostel 16 - Olympus", "h16hallmgr"),
+	new Hostel("18", "Hostel 18", "h18hallmgr"),
 	new Hostel("tansa", "Tansa House", "tansahallmgr"),
 	new Hostel("qip", "QIP", "h10ahallmgr"),
 );
