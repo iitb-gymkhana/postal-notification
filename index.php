@@ -3,7 +3,7 @@ session_start();
 require 'config.php';
 
 if (session_id() == '' || !isset($_SESSION) || !isset($_SESSION['user']) || $_SESSION['user'] == '') {
-        header("location:login.php");
+        header("location:login-prompt.php");
         exit;
 }
 
